@@ -39,7 +39,7 @@ class WatermarkApp:
 
     def __init__(self, root: tk.Tk):
         self.root = root
-        self.root.title(f"MajiMarker v{__version__} - Watermark Dokumen")
+        self.root.title(f"MajiMarker v{__version__} - Image Watermarker")
         self.root.resizable(False, False)
 
         # Set app icon
