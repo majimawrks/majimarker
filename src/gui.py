@@ -7,6 +7,7 @@ from pathlib import Path
 from datetime import datetime
 
 from watermark import add_watermark, WatermarkOrientation, WatermarkPosition, hex_to_rgb
+from _version import __version__
 
 
 SUPPORTED_EXTENSIONS = ('.jpg', '.jpeg', '.png', '.bmp', '.tiff', '.tif')
@@ -38,7 +39,7 @@ class WatermarkApp:
 
     def __init__(self, root: tk.Tk):
         self.root = root
-        self.root.title("MajiMarker - Watermark Dokumen")
+        self.root.title(f"MajiMarker v{__version__} - Watermark Dokumen")
         self.root.resizable(False, False)
 
         # Set app icon
